@@ -10,7 +10,7 @@ router.use(bodyParser.urlencoded({extended:true}));
 
 router.use(express.static(path.join(__dirname+'./../views')));
 
-router.post('/',
+router.get('/',
     [
         check('username').not().isEmpty().trim().escape(),
         check('age').not().isEmpty().trim().escape()
@@ -27,8 +27,8 @@ router.post('/',
 
         curdUser.create(
             {
-                username: req.body.username,
-                age:req.body.age
+                username: req.query.username,
+                age:req.query.age
             },
             (error,result)=>{
                 if(error){
