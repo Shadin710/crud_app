@@ -6,7 +6,7 @@ head
   link(rel='stylesheet' href='index_style.css' type='text/css')
 .spead
   .mov1
-    form(action='/process')
+    form(action='/insert/')
       h2 Insert
       br
       input(type='text' placeholder='name' name='username')
@@ -19,7 +19,7 @@ head
       br
       br
   .mov2
-    form(action='/process')
+    form(action='/find/')
       h2 Read
       br
       input(type='text' placeholder='name' name='username')
@@ -29,7 +29,7 @@ head
       br
       br
   .mov3
-    form(action='/process')
+    form(action='/update/')
       h2 Update
       br
       input(type='text' placeholder='name' name='username')
@@ -42,7 +42,7 @@ head
       br
       br
   .mov4
-    form(action='/process')
+    form(action='/delete/')
       h2 Delete
       br
       input(type='text' placeholder='name' name='username')
