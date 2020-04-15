@@ -6,6 +6,7 @@ const morgan =  require('morgan');
 const bodyParser = require('body-parser');
 const cors =  require('cors');
 const path = require('path');
+const database =  require('./database');
 
 app.use(express.static(path.join(__dirname,'views')));
 
