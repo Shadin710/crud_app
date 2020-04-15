@@ -39,7 +39,7 @@ router.get('/',
                     });
                 }
 
-                res.send('well done the data has been inserted')
+                res.send('well done the data has been inserted');
             }
         )
     })
