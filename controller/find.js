@@ -35,9 +35,14 @@ router.get('/',
                     error: error.array()
                 });
             }
-
-            //user found
-            res.send('user found at last');
+            if(result)
+            {
+                   res.send('user found at last');
+            }
+            else
+            {
+                res.send('user not found');
+            }
         })
 
     });
