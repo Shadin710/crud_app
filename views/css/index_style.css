@@ -1,0 +1,16 @@
+#insert{
+    background-color: red;
+    top: 30%;
+}
+#read{
+    background-color: blueviolet;
+    top: 30%;
+}
+#update{
+    background-color: orange;
+    top: 30%;
+}
+#delete{
+    background-color: green;
+    top: 30%;
+}

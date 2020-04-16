@@ -3,51 +3,55 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Document
-  link(rel='stylesheet' href='index_style.css' type='text/css')
-.spead
-  .mov1
-    form(action='/insert/')
-      h2 Insert
-      br
-      input(type='text' placeholder='name' name='username')
-      br
-      br
-      input(type='text' placeholder='age' name='age')
-      br
-      br
-      input(type='submit' value='submit')
-      br
-      br
-  .mov2
-    form(action='/find')
-      h2 Read
-      br
-      input(type='text' placeholder='name' name='username')
-      br
-      br
-      input(type='submit' value='submit')
-      br
-      br
-  .mov3
-    form(action='/update')
-      h2 Update
-      br
-      input(type='text' placeholder='name' name='username')
-      br
-      br
-      input(type='text' placeholder='age' name='age')
-      br
-      br
-      input(type='submit' value='submit')
-      br
-      br
-  .mov4
-    form(action='/delete')
-      h2 Delete
-      br
-      input(type='text' placeholder='name' name='username')
-      br
-      br
-      input(type='submit' value='submit')
-      br
-      br
+  link(rel='stylesheet' href='css/index_style.css' type='text/css')
+  link(rel='stylesheet' href='css/bootstrap.min.css' type='text/css')
+  link(rel='stylesheet' href='css/bootstrap-grid.min.css' type='text/css')
+  script(src='js/bootstrap.min.js')
+.container
+  .row
+    #insert.col-md-3
+      form(action='/insert/')
+        h2 Insert
+        br
+        input(type='text' placeholder='name' name='username')
+        br
+        br
+        input(type='text' placeholder='age' name='age')
+        br
+        br
+        input(type='submit' value='submit')
+        br
+        br
+    #read.col-md-3
+      form(action='/find/')
+        h2 Read
+        br
+        input(type='text' placeholder='name' name='username')
+        br
+        br
+        input(type='submit' value='submit')
+        br
+        br
+    #update.col-md-3
+      form(action='/update/')
+        h2 Update
+        br
+        input(type='text' placeholder='name' name='username')
+        br
+        br
+        input(type='text' placeholder='age' name='age')
+        br
+        br
+        input(type='submit' value='submit')
+        br
+        br
+    #delete.col-md-3
+      form(action='/delete/')
+        h2 Delete
+        br
+        input(type='text' placeholder='name' name='username')
+        br
+        br
+        input(type='submit' value='submit')
+        br
+        br
