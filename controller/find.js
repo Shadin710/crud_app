@@ -31,7 +31,7 @@ router.get('/',
             {
                 return res.json({
                     status: false,
-                    message: 'user not found',
+                    message: 'error in reading method check the code',
                     error: error.array()
                 });
             }
