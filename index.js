@@ -10,6 +10,7 @@ const database =  require('./database');
 const userController = require('./controller/insert');
 const userFind =  require('./controller/find');
 const userDelete =  require('./controller/delete');
+const userUpdate = require('./controller/update');
 app.use(express.static(path.join(__dirname,'views')));
 
 app.set('view engine','pug');
@@ -23,7 +24,7 @@ app.get('/',(req,res)=>{
 });
 app.use('/insert',userController);
 app.use('/find',userFind);
-app.use('/update',userController);
+app.use('/update',userUpdate);
 app.use('/delete',userDelete);
 
 app.listen(port,()=>{
