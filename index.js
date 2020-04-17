@@ -9,6 +9,7 @@ const path = require('path');
 const database =  require('./database');
 const userController = require('./controller/insert');
 const userFind =  require('./controller/find');
+const userDelete =  require('./controller/delete');
 app.use(express.static(path.join(__dirname,'views')));
 
 app.set('view engine','pug');
@@ -23,7 +24,7 @@ app.get('/',(req,res)=>{
 app.use('/insert',userController);
 app.use('/find',userFind);
 app.use('/update',userController);
-app.use('/delete',userController);
+app.use('/delete',userDelete);
 
 app.listen(port,()=>{
     console.log(`Listening to ${port}.....`);
