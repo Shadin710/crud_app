@@ -25,7 +25,7 @@ router.get('/',
         }
 
         //No validation error
-        curdUser.deleteOne({usename: req.query.usename},
+        curdUser.findOneAndDelete({usename: req.query.usename},
             (error,result)=>{
                 if(error)
                 {
